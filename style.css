@@ -73,3 +73,55 @@ img {
   color: #aaa;
   margin-top: 5px;
 }
+
+.animated-bg {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  /* transition: background 0.3s linear; */
+  animation: animated-bg 0.4s infinite ease-out;
+}
+
+@keyframes animated-bg {
+  0%,
+  25% {
+    background: #ada996; /* fallback for old browsers */
+
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      #f2f2f2,
+      #f2f2f2,
+      #f2f2f2
+    );
+  }
+  25%,
+  50% {
+    background: linear-gradient(
+      to right,
+      #f2f2ff,
+      rgba(0, 0, 0, 0.2),
+      #f2f2f2,
+      #f2f2f2
+    );
+  }
+  50%,
+  75% {
+    background: linear-gradient(
+      to right,
+      #f2f2f2,
+      #f2f2f2,
+      rgba(0, 0, 0, 0.2),
+      #f2f2f2
+    );
+  }
+  100% {
+    background: linear-gradient(
+      to right,
+      #f2f2ff,
+      #f2f2f2,
+      #f2f2f2,
+      rgba(0, 0, 0, 0.2)
+    );
+  }
+}

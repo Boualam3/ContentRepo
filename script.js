@@ -54,5 +54,11 @@ setTimeout(() => {
   lines.forEach((line) => {
     line.style.display = 'none'
   })
-  cardTitle.classList.remove('animated-bg animated-bg-text')
+  cardTitle.classList.remove('animated-bg ')
+  cardTitle.classList.remove('animated-bg-text')
 }, 5000)
+
+// the problem is :
+// when the time die 5secoond the cardTitel and date and name still animated
+// I try to remove classes manually but doesn't work so
+// try with another solution ok man see u with good news :)

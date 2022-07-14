@@ -74,15 +74,15 @@ img {
   margin-top: 5px;
 }
 
-.animated-bg {
+.animated-bg-text {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
   /* transition: background 0.3s linear; */
-  animation: animated-bg 0.4s infinite ease-out;
+  animation: animated-bg-text 0.4s infinite ease-out;
 }
 
-@keyframes animated-bg {
+@keyframes animated-bg-text {
   0%,
   25% {
     background: #ada996; /* fallback for old browsers */

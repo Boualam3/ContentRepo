@@ -125,3 +125,10 @@ img {
     );
   }
 }
+
+.animated-bg {
+}
+
+.card-header.animated-bg img {
+  display: none;
+}

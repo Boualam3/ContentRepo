@@ -82,6 +82,10 @@ img {
   animation: animated-bg-text 0.4s infinite ease-out;
 }
 
+.animated-bg {
+  animation: animated-bg-text 0.4s infinite ease-out;
+}
+
 @keyframes animated-bg-text {
   0%,
   25% {
@@ -124,11 +128,4 @@ img {
       rgba(0, 0, 0, 0.2)
     );
   }
-}
-
-.animated-bg {
-}
-
-.card-header.animated-bg img {
-  display: none;
 }

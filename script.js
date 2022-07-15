@@ -37,14 +37,24 @@ if (document.readyState === 'loading') {
 }
 
 setTimeout(() => {
+  removeAnimatedClasses()
+}, 5000)
+
+function removeAnimatedClasses() {
   header.childNodes[1].style.display = 'block'
   cardTitle.style.color = 'black'
   cardExcerpt.style.color = 'black'
+  cardTitle.classList.remove('animated-bg')
+  cardTitle.classList.remove('animated-bg-text')
 
   profileImg.childNodes[1].style.display = 'block'
   nameAuthor.style.color = 'black'
-  date.style.color = 'black'
+  nameAuthor.classList.remove('animated-bg')
+  nameAuthor.classList.remove('animated-bg-text')
 
+  date.style.color = 'black'
+  date.classList.remove('animated-bg')
+  date.classList.remove('animated-bg-text')
   allAnimatedBg.forEach((ele) => {
     ele.classList.remove('animated-bg')
   })
@@ -54,11 +64,4 @@ setTimeout(() => {
   lines.forEach((line) => {
     line.style.display = 'none'
   })
-  cardTitle.classList.remove('animated-bg ')
-  cardTitle.classList.remove('animated-bg-text')
-}, 5000)
-
-// the problem is :
-// when the time die 5secoond the cardTitel and date and name still animated
-// I try to remove classes manually but doesn't work so
-// try with another solution ok man see u with good news :)
+}
